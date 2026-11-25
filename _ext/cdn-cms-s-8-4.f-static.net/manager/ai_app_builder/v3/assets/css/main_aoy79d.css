@@ -1,0 +1,79 @@
+/* Explain: Base reset, global styles, and editorial typography defaults. */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--text-color);
+    background:
+        radial-gradient(circle at top left, rgba(234, 215, 183, 0.38), transparent 34rem),
+        linear-gradient(180deg, #F9FAFB 0%, #F4EFE6 100%);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+.luxury-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.035em;
+}
+
+p {
+    line-height: 1.75;
+}
+
+button,
+a {
+    transition: all 220ms ease;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(249, 115, 74, 0.65);
+    outline-offset: 4px;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.mobile-panel {
+    display: none;
+}
+
+.mobile-panel.is-open {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-panel,
+    .mobile-panel.is-open {
+        display: none;
+    }
+}

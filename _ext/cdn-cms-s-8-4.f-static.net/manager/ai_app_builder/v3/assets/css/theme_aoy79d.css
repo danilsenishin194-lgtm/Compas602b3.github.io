@@ -1,0 +1,21 @@
+/* Explain: Luxury travel magazine theme tokens */
+:root {
+    --primary-color: #0F3D4A;
+    --primary-hover: #0A2E38;
+    --secondary-color: #2F6F5E;
+    --accent-color: #F9734A;
+    --sand-color: #EAD7B7;
+    --background-color: #F9FAFB;
+    --surface-color: #FFFFFF;
+    --text-color: #102A31;
+    --text-muted: #65757B;
+    --border-color: #E5DED2;
+    --cloud-color: #F9FAFB;
+    --ink-color: #071C22;
+    --shadow-soft: 0 24px 80px rgba(15, 61, 74, 0.12);
+    --shadow-card: 0 18px 44px rgba(15, 61, 74, 0.10);
+    --radius-large: 32px;
+    --radius-medium: 22px;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Nunito Sans', Arial, sans-serif;
+}
